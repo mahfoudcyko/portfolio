@@ -19,6 +19,7 @@
 }
 
 body {
+    overflow-x: hidden;
     background-color: white;
 }
 body.active{
@@ -258,8 +259,11 @@ button:hover {
     gap: 1.3rem;
     text-align: center;
     margin-top: 50px;
+    justify-content: center;
 }
+
 .row {
+    max-width: 350px;
     background-color: var(--light-color);
     padding:40px;
     border-radius: 5px;
@@ -292,6 +296,7 @@ button:hover {
     grid-template-columns: repeat(auto-fit,minmax(300px,auto));
     gap: 1.3rem;
     text-align: center;
+    justify-content: center;
     margin-top: 50px;
 }
 .col {
@@ -300,6 +305,7 @@ button:hover {
     overflow: hidden;
     border: 1px solid rgba(0, 0, 0, 0.1);
     max-height: 350px;
+    max-width: 400px;
 }
 .col img {
     width: 100%;
@@ -456,6 +462,9 @@ button:hover {
         display: flex;
         justify-content: center;
     }
+    .home {
+        justify-items: center
+    }
 }
 @media (max-width: 670px){
     .top h3::after{
@@ -475,6 +484,10 @@ button:hover {
 @media (max-width: 480px){
     .top h3::after{
         right:42%;
+    }
+    .col,.row{
+        max-width: 300px;
+
     }
 }
 @media (max-width: 430px){
