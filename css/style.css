@@ -124,6 +124,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     left: 100px;
+    z-index: 100000;
 }
 .contact i {
     padding: 10px 5px;
@@ -166,8 +167,8 @@ button:hover {
     font-weight: 600;
 }
 .top h3 {
-    position: relative;
     font-size: 2rem;
+    position: relative;
 }
 .top h3::after{
     content: "";
@@ -176,7 +177,7 @@ button:hover {
     height: 3px;
     background-color: var(--sec-color);
     bottom: 0;
-    right:45.5%;
+    right:47.1%;
 }
 .down {
     width: 100%;
@@ -260,17 +261,18 @@ button:hover {
 }
 .row {
     background-color: var(--light-color);
-    padding:40px 5px 60px 5px;
-    border-radius: 10px;
-    border-bottom: 6px transparent;
+    padding:40px;
+    border-radius: 5px;
+    border-bottom: 6px solid transparent;
     border-radius: 30px;
     background: #e0e0e0;
-    box-shadow: 10px 10px 25px #bebebe,
-                -5px -5px 20px #ffffff;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                 transition: all 0.5s;
                 color: var(--text-color);
 }
 .row:hover{
+    border-bottom: 6px solid var(--sec-color);
+
     transform: scale(0.9);
 }
 .row img {
@@ -364,6 +366,9 @@ button:hover {
     .contact {
         left: 0px;
     }
+    .top h3::after{
+        right:46%;
+    }
 }
 @media (max-width: 970px){
     header {
@@ -419,6 +424,9 @@ button:hover {
         position: absolute;
         top: 1.2rem;
         right: 4rem;
+    }
+    .top h3::after{
+        right:45.2%;
     }
 
 }
