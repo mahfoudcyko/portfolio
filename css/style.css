@@ -457,4 +457,35 @@ button:hover {
         justify-content: center;
     }
 }
+@media (max-width: 670px){
+    .top h3::after{
+        right:44%;
+    }
+}
+@media (max-width: 670px){
+    .top h3::after{
+        right:44.4%;
+    }
+}
+@media (max-width: 560px){
+    .top h3::after{
+        right:43.2%;
+    }
+}
+@media (max-width: 480px){
+    .top h3::after{
+        right:42%;
+    }
+}
+@media (max-width: 430px){
+    .top h3::after{
+        right:41%;
+    }
+}
+@media (max-width: 380px){
+    .top h3::after{
+        right:40%;
+    }
+}
+
 
